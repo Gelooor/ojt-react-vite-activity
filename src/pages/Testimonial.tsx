@@ -1,13 +1,10 @@
 import HeaderStyle from "../components/HeaderStyle";
 
-import bgTestimonial from "../assets/images/background-1.png";
-
 export default function Testimonial() {
   return (
     <section
       id='testimonial'
-      style={{ backgroundImage: `url(${bgTestimonial})` }}
-      className='bg-black bg-left bg-no-repeat bg-55 text-gray-300 text-left p-12 flex flex-col gap-1 sm:bg-right sm:px-40'
+      className='bg-black bg-testimonial bg-left bg-no-repeat bg-55 text-gray-300 text-left p-12 flex flex-col gap-1 sm:bg-right sm:px-40'
     >
       <div>
         <HeaderStyle

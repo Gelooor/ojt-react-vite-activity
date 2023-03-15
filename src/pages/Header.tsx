@@ -1,15 +1,10 @@
-import TopConctactInformation from "./TopConctactInformation";
-import Navigation from "./Navigation";
 import HeroSection from "./HeroSection";
-
-import BgHero from "../assets/images/hero-bg.png";
+import Navigation from "./Navigation";
+import TopConctactInformation from "./TopConctactInformation";
 
 export default function Header() {
   return (
-    <header
-      className='bg-top bg-110'
-      style={{ backgroundImage: `url(${BgHero})` }}
-    >
+    <header className='bg-top bg-hero bg-110'>
       <TopConctactInformation />
       <Navigation />
       <HeroSection />
