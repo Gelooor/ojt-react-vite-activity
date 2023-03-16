@@ -1,6 +1,6 @@
-import HeroSection from "./HeroSection";
-import Navigation from "./Navigation";
-import TopConctactInformation from "./TopConctactInformation";
+import HeroSection from "../components/HeroSection";
+import Navigation from "../components/Navigation";
+import TopConctactInformation from "../components/TopConctactInformation";
 
 export default function Header() {
   return (

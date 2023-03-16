@@ -2,9 +2,11 @@ import HeaderStyle from "../components/HeaderStyle";
 import MapPointer from "../components/MapPointer";
 import Smartphone from "../components/Smartphone";
 import CloseEnvelope from "../components/CloseEnvelope";
-import ButtonStyle from "../components/ButtonStyle";
 
 export default function Contact(): JSX.Element {
+  const ulStyle = "flex flex-col gap-3";
+  const inputStyle1 = "border-gray-200 border-2 p-1";
+  const inputStyle2 = `${inputStyle1} w-1/2`;
   return (
     <section
       id='contact'
@@ -28,7 +30,7 @@ export default function Contact(): JSX.Element {
           </p>
 
           <div className='flex flex-col gap-8 sm:flex-row'>
-            <ul className='flex flex-col gap-3'>
+            <ul className={ulStyle}>
               <p className='font-bold text-center sm:text-left'>
                 Contact Information:
               </p>
@@ -42,12 +44,26 @@ export default function Contact(): JSX.Element {
                   <p>{text}</p>
                 </li>
               ))}
+
+              {/* <li className={liStyle1}>
+                <MapPointer />
+                <p>123 Your Address here</p>
+              </li>
+              <li className={liStyle1}>
+                <Smartphone />
+                <p>(046) 123 - 456</p>
+              </li>
+              <li className={liStyle1}>
+                <CloseEnvelope />
+                <p>youremail@gmail.com</p>
+              </li> */}
             </ul>
 
-            <ul className='flex flex-col gap-3'>
+            <ul className={ulStyle}>
               <p className='font-bold text-center sm:text-left'>
                 Working Hours:
               </p>
+
               {[
                 ["Monday to Friday", "9 AM - 6 PM"],
                 ["Saturday", "9 AM - 5 PM"],
@@ -58,6 +74,16 @@ export default function Contact(): JSX.Element {
                   <time>{time}</time>
                 </li>
               ))}
+
+              {/* <li className={liStyle2}>
+                <time>Monday to Friday</time> <time>9 AM - 6 PM</time>
+              </li>
+              <li className={liStyle2}>
+                <time>Saturday</time> <time>9 AM - 5 PM</time>
+              </li>
+              <li className={liStyle2}>
+                <time>Sunday</time> <time>9 AM - 12 NN</time>
+              </li> */}
             </ul>
           </div>
         </div>
@@ -70,20 +96,16 @@ export default function Contact(): JSX.Element {
 
           <form className='flex flex-col gap-2' action=''>
             <div className='flex gap-2'>
+              <input className={inputStyle2} type='text' placeholder='Name' />
               <input
-                className='border-gray-200 border-2 p-1 w-1/2'
-                type='text'
-                placeholder='Name'
-              />
-              <input
-                className='border-gray-200 border-2 p-1 w-1/2'
+                className={inputStyle2}
                 type='text'
                 placeholder='Phone Number'
               />
             </div>
             <div className='flex flex-col gap-3'>
               <input
-                className='border-gray-200 border-2 p-1'
+                className={inputStyle1}
                 type='text'
                 placeholder='Email Address'
               />
@@ -92,13 +114,12 @@ export default function Contact(): JSX.Element {
                 type='text'
                 placeholder='Message'
               />
-              <div className='self-end'>
-                <ButtonStyle
-                  color='yellow-500'
-                  hoverColor='gray-800'
-                  text='Submit'
-                />
-              </div>
+
+              <input
+                className='font-poppins uppercase w-36 h-10 rounded-3xl border-2 border-solid text-white bg-yellow-500 border-yellow-500 hover:bg-gray-800 hover:border-gray-800 self-end cursor-pointer'
+                type='submit'
+                value='Submit'
+              />
             </div>
           </form>
         </div>
