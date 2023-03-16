@@ -1,4 +1,7 @@
 import HeaderStyle from "../components/HeaderStyle";
+import MapPointer from "../components/MapPointer";
+import Smartphone from "../components/Smartphone";
+import CloseEnvelope from "../components/CloseEnvelope";
 
 export default function Contact(): JSX.Element {
   const liStyle1 = "flex gap-3 items-center";
@@ -34,66 +37,15 @@ export default function Contact(): JSX.Element {
                 Contact Information:
               </p>
               <li className={liStyle1}>
-                <svg
-                  version='1.2'
-                  xmlns='http://www.w3.org/2000/svg'
-                  viewBox='0 0 9 13'
-                  width='9'
-                  height='13'
-                >
-                  <defs>
-                    <image
-                      width='9'
-                      height='13'
-                      id='img3'
-                      href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAANCAMAAABM3rQ0AAAAAXNSR0IB2cksfwAAAGxQTFRF2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg+zge4AAAACR0Uk5TAGPN789me/+CJM56ySqI8u6MrOqrkq5VqZQzOtTaQcwZHIqkWqYkmwAAAFhJREFUeJwtzEcOgDAMRNGBABN6r6Fz/zviBP7CepItA/B8FYSQIto0EJNJmpE5CpayqFijoRK17NCTwziRMxZ+GWB12OTEOO32obzgYYFTdDlB88bfY8cL8FwDwfAFjb8AAAAASUVORK5CYII='
-                    />
-                  </defs>
-                  <style></style>
-                  <use href='#img3' x='0' y='0' />
-                </svg>
+                <MapPointer />
                 <p>123 Your Address here</p>
               </li>
               <li className={liStyle1}>
-                <svg
-                  version='1.2'
-                  xmlns='http://www.w3.org/2000/svg'
-                  viewBox='0 0 9 13'
-                  width='9'
-                  height='13'
-                >
-                  <defs>
-                    <image
-                      width='9'
-                      height='13'
-                      id='img2'
-                      href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAANCAMAAABM3rQ0AAAAAXNSR0IB2cksfwAAAHhQTFRF2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUgttI+VgAAACh0Uk5TKdHplOfULZ7/jqG1sHaPd6yzwFQAS727bme4TLZtjKigoyzV89PXMOrHD5QAAABUSURBVHicjYvXDYAwEMUehHKhXELvPcD+G1LEAFiy5B8Dli2EcFwPPpGUkihAGMXMrHSCNMsfihJV/VbT/q7v7Ur0elCjGqYEMxHx7YJ1Mxvv5jgv3AQIs2sXcYYAAAAASUVORK5CYII='
-                    />
-                  </defs>
-                  <style></style>
-                  <use href='#img2' x='0' y='0' />
-                </svg>
+                <Smartphone />
                 <p>(046) 123 - 456</p>
               </li>
               <li className={liStyle1}>
-                <svg
-                  version='1.2'
-                  xmlns='http://www.w3.org/2000/svg'
-                  viewBox='0 0 12 8'
-                  width='12'
-                  height='8'
-                >
-                  <defs>
-                    <image
-                      width='12'
-                      height='8'
-                      id='img1'
-                      href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAICAMAAAD6Ou7DAAAAAXNSR0IB2cksfwAAAJBQTFRF2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUgHEPCYQAAADB0Uk5TPuj/8epBnWfs72iauzG6vbjyzEenqUbKpgCgoaL9iHfYVlPXeYX+lXt8k2CC+/heN2zqSgAAAF1JREFUeJwlzNkaQlAAReFtnQaRctAgGVJKit7/7XzxX62rJTmYCYulVmuXycbzxTbY/XsfhMgSxQkcjiesDJzTS5ZewSinKKtbfX80PMWrnQfvDn2+9HYYbE/zGwHBPgWZ3/pIFAAAAABJRU5ErkJggg=='
-                    />
-                  </defs>
-                  <style></style>
-                  <use href='#img1' x='0' y='0' />
-                </svg>
+                <CloseEnvelope />
                 <p>youremail@gmail.com</p>
               </li>
             </ul>

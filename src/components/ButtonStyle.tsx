@@ -1,5 +1,3 @@
-import React from "react";
-
 interface IButtonProps {
   color: string;
   hoverColor: string;

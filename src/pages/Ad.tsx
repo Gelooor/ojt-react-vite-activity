@@ -1,6 +1,6 @@
 export default function Ad() {
   return (
-    <section className='flex flex-col gap-3 px-3 py-12 bg-ad bg-black bg-center text-white font-poppins text-center'>
+    <section className='flex flex-col gap-3 px-3 py-12 bg-ad bg-black bg-no-repeat bg-center text-white font-poppins text-center'>
       <div>
         <h2 className='font-crimsonText uppercase text-yellow-500 text-2xl sm:text-4xl'>
           Get Flat 25% Discount!
