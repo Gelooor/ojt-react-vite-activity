@@ -1,5 +1,6 @@
 import { BrowserRouter } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
+import MenuBurger from "../assets/svg/MenuBurger";
 
 export default function Navigation() {
   return (
@@ -9,17 +10,7 @@ export default function Navigation() {
           <p className='uppercase text-yellow-500 text-3xl font-crimsonText'>
             Barber
           </p>
-          <svg
-            className='sm:hidden'
-            xmlns='http://www.w3.org/2000/svg'
-            height='32px'
-            viewBox='0 0 24 24'
-            width='32px'
-            fill='#FFFFFF'
-          >
-            <path d='M0 0h24v24H0z' fill='none' />
-            <path d='M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z' />
-          </svg>
+          <MenuBurger />
           <ul className='hidden text-white text-xs justify-between gap-5 sm:flex'>
             <li className='hover:text-yellow-500'>
               <HashLink to='#' smooth>
