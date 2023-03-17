@@ -24,10 +24,6 @@ export default function App() {
         <Ad />
         <Contact />
       </main>
-      {/* <div
-        style={{ backgroundImage: `url(${bgMap})` }}
-        className='h-28 bg-center sm:h-96'
-      ></div> */}
       <Map />
       <Footer />
     </div>
