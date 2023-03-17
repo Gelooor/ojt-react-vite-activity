@@ -1,5 +1,5 @@
 import HeaderStyle from "../components/HeaderStyle";
-import ServiceCard from "../components/ServiceCard";
+import TeamCard from "../components/Card";
 
 import service_1 from "../assets/images/service-1.png";
 import service_2 from "../assets/images/service-2.png";
@@ -24,7 +24,7 @@ export default function Service() {
           [service_2, "Clipper Cut"],
           [service_3, "Razoe Shaver"],
         ].map(([url, text], index) => (
-          <ServiceCard key={index} imageUrl={url} haircut={text} />
+          <TeamCard key={index} imageUrl={url} name={text} />
         ))}
       </div>
     </section>

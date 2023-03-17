@@ -1,5 +1,5 @@
 import HeaderStyle from "../components/HeaderStyle";
-import TeamCard from "../components/TeamCard";
+import TeamCard from "../components/Card";
 
 import team_1 from "../assets/images/team-img1.png";
 import team_2 from "../assets/images/team-img2.png";
