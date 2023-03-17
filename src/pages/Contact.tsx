@@ -27,7 +27,7 @@ export default function Contact(): JSX.Element {
             aliquip ex ea commodo consequat.
           </p>
 
-          <div className='flex flex-col gap-8 sm:flex-row'>
+          <div className='flex flex-col justify-between gap-8 sm:flex-row'>
             <ul className='flex flex-col gap-3'>
               <p className='font-bold text-center sm:text-left'>
                 Contact Information:
