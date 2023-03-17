@@ -7,7 +7,7 @@ export default function AboutSection() {
   return (
     <section
       id='about'
-      className='text-left px-12 py-28 flex flex-col gap-10 justify-evenly items-center text-sm text-gray-500 sm:flex-row sm:px-40'
+      className='text-left px-12 py-28 flex flex-col gap-10 justify-center items-center text-sm text-gray-500 sm:flex-row sm:px-40'
     >
       <div className='flex flex-col gap-10 sm:w-[50%]'>
         <div>
