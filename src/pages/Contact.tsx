@@ -36,8 +36,8 @@ export default function Contact(): JSX.Element {
                 [<MapPointer />, "123 Your Address Here"],
                 [<Smartphone />, "(046) 123 - 456"],
                 [<CloseEnvelope />, "youremail@gmail.com"],
-              ].map(([svg, text]) => (
-                <li className='flex gap-3 items-center'>
+              ].map(([svg, text], index) => (
+                <li key={index} className='flex gap-3 items-center'>
                   {svg}
                   <p>{text}</p>
                 </li>
@@ -52,8 +52,8 @@ export default function Contact(): JSX.Element {
                 ["Monday to Friday", "9 AM - 6 PM"],
                 ["Saturday", "9 AM - 5 PM"],
                 ["Sunday", "9 AM - 12 NN"],
-              ].map(([day, time]) => (
-                <li className='flex gap-5 justify-between'>
+              ].map(([day, time], index) => (
+                <li key={index} className='flex gap-5 justify-between'>
                   <time>{day}</time>
                   <time>{time}</time>
                 </li>

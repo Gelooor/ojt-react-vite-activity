@@ -19,8 +19,8 @@ export default function Team() {
           [team_1, "Paul Narch", "Barber"],
           [team_2, "Steven Joseph", "Barber"],
           [team_3, "Alexander David", "Shaver"],
-        ].map(([url, name, job]) => (
-          <TeamCard imageUrl={url} name={name} job={job} />
+        ].map(([url, name, job], index) => (
+          <TeamCard key={index} imageUrl={url} name={name} job={job} />
         ))}
       </div>
     </section>

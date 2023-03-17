@@ -10,7 +10,7 @@ import Contact from "./pages/Contact";
 import Footer from "./pages/Footer";
 
 import bgMap from "./assets/images/map.png";
-import Map from "./components/Map";
+import Map from "./pages/Map";
 
 export default function App() {
   return (
