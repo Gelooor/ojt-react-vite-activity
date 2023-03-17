@@ -10,6 +10,7 @@ import Contact from "./pages/Contact";
 import Footer from "./pages/Footer";
 
 import bgMap from "./assets/images/map.png";
+import Map from "./components/Map";
 
 export default function App() {
   return (
@@ -23,10 +24,11 @@ export default function App() {
         <Ad />
         <Contact />
       </main>
-      <div
+      {/* <div
         style={{ backgroundImage: `url(${bgMap})` }}
         className='h-28 bg-center sm:h-96'
-      ></div>
+      ></div> */}
+      <Map />
       <Footer />
     </div>
   );

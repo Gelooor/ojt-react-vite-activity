@@ -1,6 +1,6 @@
 import HeaderStyle from "../components/HeaderStyle";
-import Ellipse from "../components/Ellipse";
-import EllipseFilled from "../components/EllipseFilled";
+import Ellipse from "../assets/svg/Ellipse";
+import EllipseFilled from "../assets/svg/EllipseFilled";
 
 export default function Testimonial() {
   return (

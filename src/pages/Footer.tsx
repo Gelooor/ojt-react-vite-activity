@@ -1,9 +1,9 @@
 import { BrowserRouter } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
-import FacebookLogo from "../components/FacebookLogo";
-import TwitterLogo from "../components/TwitterLogo";
-import LinkedInLogo from "../components/LinkedInLogo";
+import FacebookLogo from "../assets/svg//FacebookLogo";
+import TwitterLogo from "../assets/svg/TwitterLogo";
+import LinkedInLogo from "../assets/svg/LinkedInLogo";
 
 export default function Footer() {
   return (

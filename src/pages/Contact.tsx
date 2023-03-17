@@ -1,7 +1,7 @@
 import HeaderStyle from "../components/HeaderStyle";
-import MapPointer from "../components/MapPointer";
-import Smartphone from "../components/Smartphone";
-import CloseEnvelope from "../components/CloseEnvelope";
+import MapPointer from "../assets/svg/MapPointer";
+import Smartphone from "../assets/svg/Smartphone";
+import CloseEnvelope from "../assets/svg/CloseEnvelope";
 import ButtonStyle from "../components/ButtonStyle";
 
 export default function Contact(): JSX.Element {

@@ -1,5 +1,5 @@
-import CloseEnvelope from "./CloseEnvelope";
-import Smartphone from "./Smartphone";
+import CloseEnvelope from "../assets/svg/CloseEnvelope";
+import Smartphone from "../assets/svg/Smartphone";
 
 export default function TopConctactInformation() {
   const liStyle = "flex gap-2 items-center";
