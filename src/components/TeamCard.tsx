@@ -1,7 +1,7 @@
 interface ITeamProps {
   imageUrl: string;
   name: string;
-  job: string;
+  job?: string;
 }
 
 export default function TeamCard({

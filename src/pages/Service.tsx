@@ -23,8 +23,8 @@ export default function Service() {
           [service_1, "Classic Haircut"],
           [service_2, "Clipper Cut"],
           [service_3, "Razoe Shaver"],
-        ].map(([url, text]) => (
-          <ServiceCard imageUrl={url} haircut={text} />
+        ].map(([url, text, index]) => (
+          <ServiceCard key={index} imageUrl={url} haircut={text} />
         ))}
       </div>
     </section>
