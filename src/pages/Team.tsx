@@ -21,20 +21,6 @@ export default function Team() {
 
       {/* <div className='flex flex-col items-center justify-center gap-10 sm:flex-row pt-10'> */}
       <Card information={information} />
-      {/* {[
-          [team_1, "Paul Narch", "Barber"],
-          [team_2, "Steven Joseph", "Barber"],
-          [team_3, "Alexander David", "Shaver"],
-        ].map(([url, name, job], index) => (
-          <Card
-            key={index}
-            index={index}
-            imageUrl={url}
-            name={name}
-            job={job}
-          />
-        ))} */}
-      {/* </div> */}
     </section>
   );
 }

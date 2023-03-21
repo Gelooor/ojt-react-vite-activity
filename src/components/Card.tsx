@@ -16,6 +16,7 @@ export default function Card({ information }: ICardProps): JSX.Element {
     <div className='flex flex-col items-center justify-center gap-10 sm:flex-row pt-10'>
       {information.map(([url, text, job], index) => (
         <div
+          key={index}
           className={`flex flex-col items-center justify-center pb-4 gap-3 ${
             active === index && "border-2 border-black border-solid bg-gray-300"
           }`} // hover:shadow-xl]
@@ -39,8 +40,5 @@ export default function Card({ information }: ICardProps): JSX.Element {
         </div>
       ))}
     </div>
-    //   {texts.map(([url, text, job]: string, index: number) => (
-
-    // ))}
   );
 }
