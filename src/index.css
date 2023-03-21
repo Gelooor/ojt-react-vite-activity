@@ -11,3 +11,27 @@
   font-family: "Poppins";
   src: url("./assets/fonts/Poppins-Regular.ttf");
 }
+
+.transparent-button {
+  font-family: "Poppins";
+  src: url("./assets/fonts/Poppins-Regular.ttf");
+
+  color: white;
+
+  text-transform: uppercase;
+
+  width: 9rem;
+  height: 2.5rem;
+
+  border-radius: 1.5rem;
+  border-width: 2px;
+  border-style: solid;
+  border-color: white;
+
+  background-color: transparent;
+}
+
+.transparent-button:hover {
+  background-color: rgb(245, 158, 11);
+  border-color: rgb(245, 158, 11);
+}
