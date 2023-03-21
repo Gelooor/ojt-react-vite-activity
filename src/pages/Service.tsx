@@ -1,11 +1,31 @@
+import { useState } from "react";
+
 import HeaderStyle from "../components/HeaderStyle";
-import TeamCard from "../components/Card";
+import Card from "../components/Card";
 
 import service_1 from "../assets/images/service-1.png";
 import service_2 from "../assets/images/service-2.png";
 import service_3 from "../assets/images/service-3.png";
 
 export default function Service() {
+  const [active, setActive] = useState(null);
+
+  const information = [
+    [service_1, "Classic Haircut"],
+    [service_2, "Clipper Cut"],
+    [service_3, "Razoe Shaver"],
+  ];
+
+  // const service = [
+  //   {
+  //     name: [
+  //       [service_1, "Classic Haircut"],
+  //       [service_2, "Clipper Cut"],
+  //       [service_3, "Razoe Shaver"],
+  //     ],
+  //   },
+  // ];
+
   return (
     <section
       id='service'
@@ -18,15 +38,14 @@ export default function Service() {
       />
       <HeaderStyle color={"yellow-500"} text={"Our Services"} size={"4xl"} />
 
-      <div className='flex flex-col items-center justify-center gap-10 sm:flex-row pt-10'>
-        {[
+      {/* {[
           [service_1, "Classic Haircut"],
           [service_2, "Clipper Cut"],
           [service_3, "Razoe Shaver"],
         ].map(([url, text], index) => (
-          <TeamCard key={index} imageUrl={url} name={text} />
-        ))}
-      </div>
+          <Card {...service} key={index} />
+        ))} */}
+      <Card information={information} />
     </section>
   );
 }

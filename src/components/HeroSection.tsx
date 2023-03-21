@@ -13,8 +13,8 @@ export default function HeroSection() {
       </p>
 
       <div className='flex flex-col gap-2 pt-2 sm:flex-row'>
-        <button className={buttonStyle}>Read More</button>
-        <button className={buttonStyle}>Read More</button>
+        <button className={buttonStyle}>Learn More</button>
+        <button className={buttonStyle}>Contact Us</button>
       </div>
     </section>
   );
