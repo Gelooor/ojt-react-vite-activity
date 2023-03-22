@@ -1,4 +1,4 @@
-export interface information {
+export interface Iinformation {
     id: number;
     imgUrl: string;
     name: string;

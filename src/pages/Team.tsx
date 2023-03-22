@@ -37,7 +37,6 @@ export default function Team() {
       <HeaderStyle color={"gray-400"} text={"Professional"} size={"base"} />
       <HeaderStyle color={"yellow-500"} text={"Our Team"} size={"4xl"} />
 
-      {/* <div className='flex flex-col items-center justify-center gap-10 sm:flex-row pt-10'> */}
       <Card informations={team} />
     </section>
   );

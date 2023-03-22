@@ -22,7 +22,7 @@ export default function Service() {
       isActive: false,
     },
     {
-      id: 1,
+      id: 3,
       imgUrl: service_3,
       name: "Razoe Shaver",
       isActive: false,

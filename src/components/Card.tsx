@@ -1,38 +1,46 @@
 import { useState } from "react";
 import ButtonStyle from "./ButtonStyle";
-import { information } from "../interface/Types";
+import { Iinformation } from "../interface/Types";
 
 interface ICardProps {
-  informations: object;
+  informations: Array<Iinformation>;
 }
 
 export default function Card({ informations }: ICardProps): JSX.Element {
   const [activeCard, setActiveCard] = useState(informations);
-  // const handleClick = (index: number) => {
-  //   setActive((prevState) => ());
-  // };
 
-  const setActiveCard = (index: number) => {
-    const tempArr = [...active];
+  const toggleActiveCard = (index: number) => {
+    const tempArr = [...activeCard];
 
     tempArr.forEach((e) => (e.isActive = false));
 
-    tempArr[index].isActive = true;
+    // not working
+    if (index === tempArr[index].id) {
+      tempArr[index].isActive = false;
+    } else {
+      tempArr[index].isActive = true;
+    }
+
+    console.log(index);
+    console.log(tempArr[index].id);
+    console.log(tempArr[index].isActive);
 
     setActiveCard(tempArr);
   };
 
+  // console.log(informations.isActive);
+
   return (
     <div className='flex flex-col items-center justify-center gap-10 sm:flex-row pt-10'>
-      {activeCard.map((information: information, index: number) => {
+      {activeCard.map((information: Iinformation, index: number) => {
         return (
           <div
             key={index}
             className={`flex flex-col items-center justify-center pb-4 gap-3 ${
-              information.id === index &&
+              information.isActive &&
               "border-2 border-black border-solid bg-gray-300"
             }`}
-            onClick={() => setActiveCard(index)} // hover:shadow-xl]
+            onClick={() => toggleActiveCard(index)} // hover:shadow-xl]
           >
             <img
               className={
