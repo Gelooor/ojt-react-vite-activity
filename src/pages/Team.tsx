@@ -6,10 +6,28 @@ import team_2 from "../assets/images/team-img2.png";
 import team_3 from "../assets/images/team-img3.png";
 
 export default function Team() {
-  const information = [
-    [team_1, "Paul Narch", "Barber"],
-    [team_2, "Steven Joseph", "Barber"],
-    [team_3, "Alexander David", "Shaver"],
+  const team = [
+    {
+      id: 1,
+      imgUrl: team_1,
+      name: "Paul Narch",
+      job: "Barber",
+      isActive: false,
+    },
+    {
+      id: 2,
+      imgUrl: team_2,
+      name: "Steven Joseph",
+      job: "Barber",
+      isActive: false,
+    },
+    {
+      id: 3,
+      imgUrl: team_3,
+      name: "Alexander David",
+      job: "Shaver",
+      isActive: false,
+    },
   ];
   return (
     <section
@@ -20,7 +38,7 @@ export default function Team() {
       <HeaderStyle color={"yellow-500"} text={"Our Team"} size={"4xl"} />
 
       {/* <div className='flex flex-col items-center justify-center gap-10 sm:flex-row pt-10'> */}
-      <Card information={information} />
+      <Card informations={team} />
     </section>
   );
 }
