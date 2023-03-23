@@ -10,22 +10,37 @@ export default function Card({ informations }: ICardProps): JSX.Element {
   const [activeCard, setActiveCard] = useState(informations);
 
   const toggleActiveCard = (index: number) => {
-    const tempArr = [...activeCard];
+    setActiveCard((prev: Iinformation[]) => [
+      ...prev.map((elem, i) => {
+        if (i === index) {
+          return {
+            ...elem,
+            isActive: !elem.isActive,
+          };
+        } else {
+          return {
+            ...elem,
+            isActive: false,
+          };
+        }
+      }),
+    ]);
 
-    tempArr.forEach((e) => (e.isActive = false));
+    // const tempArr = [...activeCard];
 
-    // not working
-    if (index === tempArr[index].id) {
-      tempArr[index].isActive = false;
-    } else {
-      tempArr[index].isActive = true;
-    }
+    // tempArr.forEach((e) => (e.isActive = false));
 
-    console.log(index);
-    console.log(tempArr[index].id);
-    console.log(tempArr[index].isActive);
+    // // not working because of 0 iteration
+    // if (tempArr[index].isActive === true) {
+    //   setActiveCard({ ...tempArr[index], isActive: false });
+    // } else {
+    //   setActiveCard({ ...tempArr[index], isActive: true });
+    // }
+    // console.log(tempArr[index].id);
+    // console.log(tempArr[index].isActive);
+    // console.log(activeCard[index].isActive);
 
-    setActiveCard(tempArr);
+    // setActiveCard(tempArr);
   };
 
   // console.log(informations.isActive);
@@ -37,8 +52,9 @@ export default function Card({ informations }: ICardProps): JSX.Element {
           <div
             key={index}
             className={`flex flex-col items-center justify-center pb-4 gap-3 ${
-              information.isActive &&
-              "border-2 border-black border-solid bg-gray-300"
+              information.isActive
+                ? "border-2 border-black border-solid bg-gray-300"
+                : "border-2 border-transparent border-solid"
             }`}
             onClick={() => toggleActiveCard(index)} // hover:shadow-xl]
           >

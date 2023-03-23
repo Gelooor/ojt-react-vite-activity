@@ -8,26 +8,7 @@ import service_2 from "../assets/images/service-2.png";
 import service_3 from "../assets/images/service-3.png";
 
 export default function Service() {
-  const service = [
-    {
-      id: 1,
-      imgUrl: service_1,
-      name: "Classic Haircut",
-      isActive: false,
-    },
-    {
-      id: 2,
-      imgUrl: service_2,
-      name: "Clipper Cut",
-      isActive: false,
-    },
-    {
-      id: 3,
-      imgUrl: service_3,
-      name: "Razoe Shaver",
-      isActive: false,
-    },
-  ];
+  // const service = ;
 
   // const ``information = [
   //   [service_1, "Classic Haircut"],
@@ -47,7 +28,28 @@ export default function Service() {
       />
       <HeaderStyle color={"yellow-500"} text={"Our Services"} size={"4xl"} />
 
-      <Card informations={service} />
+      <Card
+        informations={[
+          {
+            id: 1,
+            imgUrl: service_1,
+            name: "Classic Haircut",
+            isActive: false,
+          },
+          {
+            id: 2,
+            imgUrl: service_2,
+            name: "Clipper Cut",
+            isActive: false,
+          },
+          {
+            id: 3,
+            imgUrl: service_3,
+            name: "Razoe Shaver",
+            isActive: false,
+          },
+        ]}
+      />
     </section>
   );
 }
