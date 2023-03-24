@@ -10,7 +10,7 @@ import team_3 from "../assets/images/team-img3.png";
 import { Iinformation } from "../interface/Types";
 
 export default function Team() {
-  const [activeCard, setActiveCard] = useState([
+  const [activeCard, setActiveCard] = useState<Iinformation[]>([
     {
       id: 1,
       imgUrl: team_1,
@@ -33,8 +33,6 @@ export default function Team() {
       isActive: false,
     },
   ]);
-
-  console.log(typeof activeCard[1].job);
 
   const toggleActiveCard = (index: number) => {
     setActiveCard((prev: Iinformation[]) => [

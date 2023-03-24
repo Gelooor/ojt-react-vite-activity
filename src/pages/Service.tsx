@@ -10,7 +10,7 @@ import service_3 from "../assets/images/service-3.png";
 import { Iinformation } from "../interface/Types";
 
 export default function Service() {
-  const [activeCard, setActiveCard] = useState([
+  const [activeCard, setActiveCard] = useState<Iinformation[]>([
     {
       id: 1,
       imgUrl: service_1,
